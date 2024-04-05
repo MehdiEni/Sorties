@@ -8,6 +8,8 @@ use Doctrine\Persistence\ObjectManager;
 
 class UtilisateurFixture extends Fixture
 {
+    private $password;
+
     public function load(ObjectManager $manager): void
     {
         $marc = new Utilisateur();
